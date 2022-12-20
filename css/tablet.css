@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tablet{
+    width: 21.5vw;
+    border: 0.5px solid #cccaca;
+    background-color: #fff;
+    margin: 0 0.09vw;
+    cursor: pointer;
+}
+
+
+.left{
+    margin-left: 6vw;
+}
+
+
+footer{
+    margin-top: 10vh;
+}

@@ -1,0 +1,21 @@
+section{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    background-color: #fff;
+    margin: 2px 2px;
+    width: 20vw;
+    height: 50vh;
+    cursor: pointer;
+    border: 0.5px solid #cccaca;
+    text-align: center;
+}
+
+.item img{
+    width: 20vw;
+}

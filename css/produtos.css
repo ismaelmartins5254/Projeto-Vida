@@ -1,0 +1,42 @@
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    
+}
+
+.itens{
+    border: 0.5px solid #edecec;
+    text-align: center;
+    width: 18vw;
+    height: 41vh;
+    background-color: #fff;
+    margin:0 0.5px;
+}
+
+.itens img{
+    margin-top: 2vw;
+}
+
+.itens > .preco{
+    margin-top: 5vh;
+}
+
+.itens button{
+    border: none;
+    width: 15vw;
+    height: 5vh;
+    cursor: pointer;
+    background-color: #751FFF;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 6vh;
+    transition: 1s;
+
+}
+
+footer{
+    margin-top: 5vh;
+}
