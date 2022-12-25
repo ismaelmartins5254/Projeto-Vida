@@ -107,10 +107,10 @@ header a{
     background: none;
 }
 
-.texto-prom button a, .texto-fone button a{
+.texto-prom button, .texto-fone button {
     text-decoration: none;
     color: #000;
-    font-size: 3em;
+    font-size: 2.5em;
     
 }
 
@@ -143,19 +143,21 @@ header a{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.bestseler{
+.bestseller{
     background-color: #fff;
     padding: 8vh 0 0 0;
-    
-    
 }
 
-.bestseler div{
+.bestSellersItens{
+    display: flex;
+}
+
+.bestseller div{
     cursor: pointer;
     transition: 1s;
 }
 
-.bestseler h2{
+.bestseller h2{
     text-align: center;
     font-size: 40px;
     margin-bottom: 5vh;
@@ -176,13 +178,13 @@ header a{
     margin-left: 3vw;
 }
 
-.bestseler img{
+.bestseller img{
     width: 15vw;
     height: 30vh;
     cursor: pointer;
 }
 
-.bestseler span{
+.bestseller span{
     position: absolute;
     background-color: red;
     color: #fff;
@@ -195,7 +197,7 @@ header a{
     margin-top: 2vh;
 }
 
-.bestseler button, .sale button{
+.bestseller button, .sale button{
     margin-top: 5vh;
     margin-left: 32vw;
     border: none;
@@ -210,7 +212,7 @@ header a{
     transition: 1s;
 }
 
-.bestseler button a, .sale button a{
+.bestseller button a, .sale button a{
     text-decoration: none;
     color: #fff;
 }
