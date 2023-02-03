@@ -2,18 +2,18 @@
 .texto-prom button:hover, .texto-fone button:hover{
     background-color: #c9c9c9;
     width: 100%;
-    
+    height: 1em;
 }
 
 .bestseler button:hover, .sale button:hover{
     background-color: #4d17a3;
-}
+}   
 
 .links a:hover{
     background-color: #9e9e9e;
 }
 
-.atalho-item img:hover, .bestSellersItens div:hover, .categorias div:hover, .sale div:hover{
+.atalho-item img:hover, .bestSellersItens div:hover, .categorias div div:hover, .sale div:hover{
     zoom:1.03;
     
 }

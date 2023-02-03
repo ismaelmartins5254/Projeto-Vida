@@ -8,6 +8,7 @@
     <title>Vida</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/frufru.css">
+    <link rel="stylesheet" href="./css/mediaScreen.css">
     <link rel="shortcut icon" href="imagens/airpodsMax.webp">
 </head>
 
@@ -29,30 +30,32 @@
 
         <div class="atalho">
             <h1>Aqui Tem</h1>
-            <div class="atalho-item atalho1">
-                <a href="">
-                    <img src="imagens/Itens-prin/Esporte.png" alt=""> <br>
-                    <span>Esporte</span>
-                </a>
-            </div>
             <div class="atalho-item">
-                <a href="">
-                    <img src="imagens/Itens-prin/Livros.png" alt=""> <br>
-                    <span>Livros</span>
+                <div class=" atalho1">
+                    <a href="">
+                        <img src="imagens/Itens-prin/Esporte.png" alt=""> <br>
+                        <span>Esporte</span>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <img src="imagens/Itens-prin/Livros.png" alt=""> <br>
+                        <span>Livros</span>
 
-                </a>
-            </div>
-            <div class="atalho-item">
-                <a href="">
-                    <img src="imagens/Itens-prin/Moda.png" alt=""> <br>
-                    <span>Moda</span>
-                </a>
-            </div>
-            <div class="atalho-item">
-                <a href="">
-                    <img src="imagens/Itens-prin/ofertaDia.png" alt=""> <br>
-                    <span>Oferta do Dia</span>
-                </a>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <img src="imagens/Itens-prin/Moda.png" alt=""> <br>
+                        <span>Moda</span>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <img src="imagens/Itens-prin/ofertaDia.png" alt=""> <br>
+                        <span>Oferta do Dia</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -62,11 +65,13 @@
                     <p>Ofertas de férias</p>
                     <h3>Até <br> 30% de desconto</h3>
                     <span>Marcas de smartphones selecionadas</span> <br>
-                    <button> Comprar</button>
+                    <div>
+                        <button> Comprar</button>
+                    </div>
                 </div>
                 <img src="imagens/off holiday.png" alt="">
             </div>
-            <div class="fone">
+            <div class="fone promocao">
                 <div class="texto-fone">
                     <p>Apenas</p>
                     <h2>Pegue seu som em <br> Qualquer lugar</h2>
@@ -147,47 +152,48 @@
         <button>Mostrar Todos</button>
     </section>
 
-    <section class="categorias"> <!--Categoria dos itens-->
+    <div class="categorias">
+        <!--Categoria dos itens-->
         <h1>Categorias Disponiveis</h1>
-
-        <div class="cel">
-            <a href="html/celulares.html">
-                <img src="imagens/itens-sec/Celulares.png" alt="">
-                <span>Celulares</span>
-            </a>
+        <div class="container_category">
+            <div class="cel">
+                <a href="html/celulares.html">
+                    <img src="imagens/itens-sec/Celulares.png" alt="">
+                    <span>Celulares</span>
+                </a>
+            </div>
+            <div class="pc">
+                <a href="">
+                    <img src="imagens/itens-sec/Computadores.png" alt="">
+                    <span>Computadores</span>
+                </a>
+            </div>
+            <div class="drone">
+                <a href="">
+                    <img src="imagens/itens-sec/Drones.png" alt="">
+                    <span>Drones</span>
+                </a>
+            </div>
+            <div class="relogio">
+                <a href="html/relogio.html">
+                    <img src="imagens/itens-sec/Relogios.png" alt="">
+                    <span>Relogios</span>
+                </a>
+            </div>
+            <div class="tablet">
+                <a href="html/tablets.html">
+                    <img src="imagens/itens-sec/Tablets.png" alt="">
+                    <span>Tablets</span>
+                </a>
+            </div>
+            <div class="tv">
+                <a href="html/tv.html">
+                    <img src="imagens/itens-sec/TVs.png" alt="">
+                    <span>TV</span>
+                </a>
+            </div>
         </div>
-        <div class="pc">
-            <a href="">
-                <img src="imagens/itens-sec/Computadores.png" alt="">
-                <span>Computadores</span>
-            </a>
-        </div>
-        <div class="drone">
-            <a href="">
-                <img src="imagens/itens-sec/Drones.png" alt="">
-                <span>Drones</span>
-            </a>
-        </div>
-        <div class="relogio">
-            <a href="html/relogio.html">
-                <img src="imagens/itens-sec/Relogios.png" alt="">
-                <span>Relogios</span>
-            </a>
-        </div>
-        <div class="tablet">
-            <a href="html/tablets.html">
-                <img src="imagens/itens-sec/Tablets.png" alt="">
-                <span>Tablets</span>
-            </a>
-        </div>
-        <div class="tv">
-            <a href="html/tv.html">
-                <img src="imagens/itens-sec/TVs.png" alt="">
-                <span>TV</span>
-            </a>
-        </div>
-
-    </section>
+    </div>
 
     <!--Itens em promoçao-->
     <section class="sale">

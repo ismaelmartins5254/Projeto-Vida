@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: #edecec;
     font-family: 'DM Sans', sans-serif;
-  
+    
 }
 
-header{
+header {
+    display: flex;
+    flex-direction: column;
     background-color: #c0c0c0;
     color: #fff;
     align-items: center;
@@ -19,185 +21,176 @@ header{
     padding: 8vh 0 5vh 0;
     font-variant: small-caps;
     margin-bottom: 5vh;
-    
+
 }
 
-header h1{
+header h1 {
     margin-bottom: 3vh;
 }
 
-header a{
+header a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.5em;
     color: #fff;
     margin: 0 10vw;
 }
 
-.atalho{
+.atalho {
     display: flex;
-    background-color:#fff;
-    padding: 10vh 0 2.5vh 10vw;
+    background-color: #fff;
+    padding: 10vh 0 2.5vh 0;
     margin-bottom: 5vh;
     text-align: center;
-    
+    flex-direction: column;
 }
 
-.atalho h1{
-    position: absolute;
-    margin-top: -10vh;
-    margin-left: 35vw;
-    font-size: 3.5em;
+.atalho-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }
 
-.atalho-item{
-    margin: 0 5vw;
-    
-}
-
-.atalho1{
-    margin-left: 15vw;
-}
-
-.atalho a{
+.atalho a {
     text-decoration: none;
     color: #000;
 }
 
-.slider{
-    background-position: center;
-    width: 90vw;
-    height: 80vh;
-    display: block;
-    margin: auto;
-    border-radius: 5px;
-    background-color: #edecec;
-}
-
-.meio{
+.meio {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.promocao{
+.promocao {
     margin-top: 5vh;
-    padding: 0 15vw 0 4vw;
+    display: flex;
+    justify-content: inherit;
+    
 }
 
-.texto-prom{
+.promocao img{
+    width: 24em;
+}
+
+.texto-prom {
     position: absolute;
     text-align: center;
     color: #fff;
 }
 
-.texto-prom h3, .texto-fone h2{
-    font-size: 40px;/*
+.texto-prom h3,
+.texto-fone h2 {
+    font-size: 40px;
+    /*
     margin-bottom: 2vh;
     margin-top: 2vh;
     margin-left: 5vw;*/
 }
 
-.texto-prom button, .texto-fone button{
+.texto-prom button,
+.texto-fone button {
     border: none;
     border-radius: 15px;
-    margin-top: 5vh;
     height: 5vh;
     cursor: pointer;
     transition: 1s;
     background: none;
-}
-
-.texto-prom button, .texto-fone button {
     text-decoration: none;
     color: #000;
     font-size: 2.5em;
-    
 }
 
-.fone{
+.fone {
     margin-top: 5vh;
     margin-left: -5vw;
     font-family: 'DM Sans', sans-serif;
 }
 
-.texto-fone{
+.texto-fone {
     position: absolute;
     text-align: center;
     color: #fff;
 }
 
-.detalhes{
+.detalhes {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 50px;
-    border: 2px solid #5e5e5e;
-    height: 10vh;
-    background-color: rgba(255, 255, 255, 0.603);
+    background-color: #f0eeff;
+    border: 2px solid #000;
 }
 
-.entrega, .frete, .precobaixo{
-    margin-left: 10vw;
-    margin: 0 8vw;
-    height: 5vh;
-    display: flex;
-    margin-top: 2vh;
+
+.entrega,
+.frete,
+.precobaixo {
     font-family: 'Times New Roman', Times, serif;
-}
-
-.bestseller{
-    background-color: #fff;
-    padding: 8vh 0 0 0;
-}
-
-.bestSellersItens{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.bestseller div{
+.bestseller {
+    background-color: #fff;
+
+}
+
+.bestSellersItens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestseller div {
     cursor: pointer;
     transition: 1s;
 }
 
-.bestseller h2{
+.bestseller h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 4em;
     margin-bottom: 5vh;
 }
 
-.seler1, .seler2, .seler3, .seler4, .seler5, .seler6{
-    border: 1px solid rgba(0, 0, 0, 0.37);
-    width: 15vw;
-    display: inline-block;
-    
+.seler1,
+.seler2,
+.seler3,
+.seler4,
+.seler5,
+.seler6 {
+    border: 1px solid #000;
+    width: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
 }
 
-.seler2, .seler3, .seler4, .seler5, .seler6{
-    margin-left: -5px;
-}
-
-.seler1{
-    margin-left: 3vw;
-}
-
-.bestseller img{
-    width: 15vw;
+.bestseller img {
     height: 30vh;
     cursor: pointer;
 }
 
-.bestseller span{
+.bestseller span {
     position: absolute;
     background-color: red;
     color: #fff;
 }
 
-.preco{
+.preco {
     text-align: center;
     color: #751FFF;
     font-size: 17px;
     margin-top: 2vh;
 }
 
-.bestseller button, .sale button{
+.bestseller button,
+.sale button {
     margin-top: 5vh;
     margin-left: 32vw;
     border: none;
@@ -212,55 +205,93 @@ header a{
     transition: 1s;
 }
 
-.bestseller button a, .sale button a{
+.bestseller button a,
+.sale button a {
     text-decoration: none;
     color: #fff;
 }
 
 
-.sale{
+.sale {
     background-color: #fff;
     margin-top: 15vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
-.sale > div{
+.sale>div {
     justify-content: center;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
-.sale h2{
-    position: absolute;
+.sale h2 {
     text-align: center;
-    font-size: 30px;
-    padding: 4vh 0 0 0;
+    font-size: 4em;
+    width: 100%;
+    margin-top: .5em;
 }
 
-.sale1, .sale2, .sale3, .sale4{
-    border: 1px solid rgba(0, 0, 0, 0.37);
-    width: 15vw;
+.sale1,
+.sale2,
+.sale3,
+.sale4 {
+    border: 1px solid #000;
     margin-top: 10vh;
 }
 
-.sale img{
-    width: 15vw;
-    height: 30vh;
-    
+.sale img {
+    width: 20em;
+    height: 10em;
+
 }
 
-.sale span{
+.sale span {
     position: absolute;
     background-color: red;
     color: #fff;
 }
 
-.sale > button{
-   margin: 10vh 10vw;
+.sale>button {
+    margin: 10vh 10vw;
 }
 
-footer{
+.categorias {
+    display: flex;
+    background-color: #fff;
+    margin-top: 5vh;
+    padding: 15vh 0 3vh 0;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.categorias img {
+    border-radius: 70px;
+    box-shadow: 1px 1px 1px 0 #2b2b2b77;
+
+}
+
+.categorias a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.categorias h1 {
+    position: absolute;
+    margin: -10vh 11vw;
+    width: 40vw;
+}
+
+.container_category{
+    display: flex;
+    align-items: flex-end;
+}
+
+footer {
     background-color: #000;
     color: #fff;
     font-size: 20px;
@@ -268,39 +299,6 @@ footer{
     text-align: center;
 }
 
-footer span{
+footer span {
     padding: 1vh 11vw 1vw 1vw;
-}
-
-.categorias{
-    display: flex;
-    background-color: #fff;
-    margin-top: 5vh;
-    padding: 15vh 0 3vh 0;
-    text-align: center;
-    justify-content: center;
-}
-
-.categorias > div{
-    display: flex;
-
-}
-
-.categorias img{
-    border-radius: 70px;
-    box-shadow: 1px 1px 1px 0 #2b2b2b77;
-    
-}
-
-.categorias a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-.categorias h1{
-    position: absolute;
-    margin: -10vh 11vw;
-    width: 40vw;
-
 }
