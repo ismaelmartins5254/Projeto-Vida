@@ -1,0 +1,24 @@
+@media only screen and (max-width:800px) {
+    .meio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detalhes div img {
+        width: 40px;
+    }
+
+    .categorias {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container_category{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bestSellersItens{
+        flex-direction: column;
+    }
+}
