@@ -1,22 +1,27 @@
 main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
-.tablet{
-    width: 21.5vw;
-    border: 0.5px solid #cccaca;
+.Pagetablet{
     background-color: #fff;
-    margin: 0 0.09vw;
+    display: flex;
+    flex-direction: column;
+
     cursor: pointer;
+    border: 0.5px solid #cccaca;
+    
 }
 
-
-.left{
-    margin-left: 6vw;
+.Pagetablet p:not(.preco){
+    margin-top: 2vh;
+    width: 15vw;
+    margin-left: 2.5vw;
+    overflow:hidden ;
+    text-overflow: ellipsis;
 }
-
 
 footer{
     margin-top: 10vh;

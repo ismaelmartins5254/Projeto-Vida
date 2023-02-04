@@ -1,18 +1,18 @@
 .produtos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 10vw;
-    
+    justify-content: center;
 }
 
 .itens{
     border: 0.5px solid #edecec;
+    display: flex;
     text-align: center;
-    width: 18vw;
+    width: 14em;
     height: 41vh;
     background-color: #fff;
-    margin:0 0.5px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .itens img{
@@ -25,7 +25,7 @@
 
 .itens button{
     border: none;
-    width: 15vw;
+    width: 8em;
     height: 5vh;
     cursor: pointer;
     background-color: #751FFF;

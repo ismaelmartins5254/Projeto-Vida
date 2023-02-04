@@ -21,4 +21,15 @@
     .bestSellersItens{
         flex-direction: column;
     }
+
+    .saleItens{
+        flex-direction: column;
+    }
+
+    .Pagetablet{
+        width: 10em;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
 }
