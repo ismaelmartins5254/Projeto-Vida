@@ -1,21 +1,18 @@
-section{
+.container_itensPc{
     display: flex;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.item{
+.container_itensPc div{
     background-color: #fff;
     width: 14em;
-    height: 41vh;
     cursor: pointer;
     border: 0.5px solid #cccaca;
     text-align: center;
+    
 }
 
-.item img{
-    width: 50%;
+.container_itensPc div p{
+    font-size: 1.7em;
 }

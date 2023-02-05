@@ -169,7 +169,7 @@ header a {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-
+    
 }
 
 .bestseller img {
@@ -186,7 +186,6 @@ header a {
 .preco {
     text-align: center;
     color: #751FFF;
-    font-size: 17px;
     margin-top: 2vh;
 }
 
@@ -295,3 +294,6 @@ header a {
     align-items: flex-end;
 }
 
+p{
+    font-size: 1.7em;
+}
