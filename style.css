@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: #c0c0c0;
+    background-color: #751FFF;
     color: #fff;
     align-items: center;
     text-align: center;
@@ -25,6 +25,7 @@ header {
 
 header h1 {
     margin-bottom: 3vh;
+    font-size: 3em;
 }
 
 .links{
@@ -37,7 +38,7 @@ header h1 {
 header a {
     
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #fff;
     width: 8em;
     border-radius: 5px;
@@ -107,7 +108,6 @@ header a {
 
 .fone {
     margin-top: 5vh;
-    margin-left: -5vw;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -144,12 +144,14 @@ header a {
 }
 
 .bestSellersItens {
+    cursor: pointer;
     display: flex;
     justify-content: center;
+    font-size: .8em;
 }
 
 .bestseller div {
-    cursor: pointer;
+    
     transition: 1s;
 }
 
@@ -164,7 +166,7 @@ header a {
 .seler4,
 .seler5,
 .seler6 {
-    border: 1px solid #000;
+    border: .5px solid #edecec;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -173,7 +175,7 @@ header a {
 }
 
 .bestseller img {
-    height: 30vh;
+    height: 20vh;
     cursor: pointer;
 }
 
@@ -199,7 +201,7 @@ header a {
     background-color: #751FFF;
     border-radius: 20px;
     color: #f2f2f2;
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin-bottom: 10vh;
     transition: 1s;
 }
@@ -210,8 +212,7 @@ header a {
     justify-content: center;
 }
 
-.bestseller button a,
-.sale button a {
+.bestseller button a{
     text-decoration: none;
     color: #fff;
 }
@@ -227,10 +228,11 @@ header a {
 
 .saleItens{
     justify-content: center;
-    cursor: pointer;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: .8em;
 }
 
 .saleItens div img{
@@ -248,7 +250,8 @@ header a {
 .sale2,
 .sale3,
 .sale4 {
-    border: 1px solid #000;
+    cursor: pointer;
+    border: .5px solid #edecec;
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -260,6 +263,12 @@ header a {
     position: absolute;
     background-color: red;
     color: #fff;
+}
+
+.saleButton, .buttonSeler{
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
 }
 
 .categorias {

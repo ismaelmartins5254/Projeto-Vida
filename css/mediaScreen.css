@@ -25,11 +25,10 @@
     .saleItens{
         flex-direction: column;
     }
+}
 
-    .Pagetablet{
-        width: 10em;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
+@media only screen and (min-width:2638px){
+    .saleButton, .buttonSeler{
+        font-size: 2em;
     }
 }

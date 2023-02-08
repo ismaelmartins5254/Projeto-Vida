@@ -2,7 +2,6 @@ section{
     display: flex;
     overflow: hidden;
     text-overflow: ellipsis;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -10,10 +9,13 @@ section{
 .item{
     background-color: #fff;
     width: 14em;
-    height: 41vh;
+    align-items: center;
     cursor: pointer;
     border: 0.5px solid #cccaca;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .item img{
