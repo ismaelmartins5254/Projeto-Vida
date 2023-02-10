@@ -1,14 +1,24 @@
 section{
     display: flex;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-wrap: wrap;
     justify-content: center;
+    
+}
+
+.containerRel{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 80%;
 }
 
 .item{
     background-color: #fff;
-    width: 14em;
+    width: 20em;
+    height: 25em;
     align-items: center;
     cursor: pointer;
     border: 0.5px solid #cccaca;

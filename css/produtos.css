@@ -1,15 +1,24 @@
+.containerProd{
+    display: flex;
+    justify-content: center;
+}
+
 .produtos{
     display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
     flex-wrap: wrap;
-    justify-content: center;
-    width: auto;
+    align-items: center;
+    max-width: 80%;
 }
 
 .itens{
     border: 0.5px solid #edecec;
     display: flex;
-    text-align: center;
-    width: 14em;
+    width: 20em;
+    height: 25em;
     background-color: #fff;
     flex-direction: column;
     align-items: center;
@@ -27,14 +36,14 @@
 .itens button{
     border: none;
     width: 8em;
-    height: 5vh;
+    height: 35px;
     cursor: pointer;
     background-color: #751FFF;
-    border-radius: 9px;
+    border-radius: 5px;
     color: #fff;
     font-size: 1.6em;
     transition: 1s;
-    margin-top: auto;
+    margin-top: 30px;
 }
 
 footer{

@@ -13,5 +13,4 @@ var btn = document.querySelectorAll('button')
         if(takelittle.id == 'a2'){
             window.location.href = 'html/produtos.html'
         }
-
     })

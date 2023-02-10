@@ -1,4 +1,4 @@
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:700px) {
     .meio {
         display: flex;
         flex-direction: column;
@@ -13,22 +13,84 @@
         justify-content: space-between;
         align-items: center;
     }
-    .container_category{
+
+    .container_category {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .bestSellersItens{
+
+    .bestSellersItens {
         flex-direction: column;
     }
 
-    .saleItens{
+    .saleItens {
         flex-direction: column;
     }
+
 }
 
-@media only screen and (min-width:2638px){
-    .saleButton, .buttonSeler{
+@media only screen and (max-width:450px) {
+
+    p {
+        font-size: 1em;
+    }
+
+    .links {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .promocao img {
+        width: 15em;
+    }
+
+    .texto-prom h3,
+    .texto-fone h2 {
+        font-size: 1.6em;
+    }
+
+    .texto-prom button,
+    .texto-fone button {
+        font-size: 1.5em;
+    }
+
+    .detalhes {
+        margin: 1em 0;
+    }
+
+    .sale h2,
+    .bestseller h2 {
+        font-size: 3em;
+    }
+
+    .bestseller button,
+    .sale button {
+        width: 50vw;
+        height: 7vh;
+        border-radius: 12px;
+    }
+
+    .categorias h1 {
+        position: relative;
+        margin: auto;
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width:2638px) {
+
+    p,
+    span:not(.promocao span) {
+        font-size: 2em;
+    }
+
+    .saleButton,
+    .buttonSeler {
         font-size: 2em;
     }
 }

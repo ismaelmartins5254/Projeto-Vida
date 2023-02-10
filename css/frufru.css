@@ -1,6 +1,6 @@
 /* home page */
 .texto-prom button:hover, .texto-fone button:hover{
-    background-color: #c9c9c9;
+    background-color: #8011BA;
     width: 100%;
     height: 1em;
 }
@@ -13,9 +13,12 @@
     background-color: #4d17a3;
 }
 
-.atalho-item img:hover, .bestSellersItens div:hover, .categorias div div:hover, .saleItens div:hover{
+.atalho-item img:hover, .categorias div div:hover, .saleItens div:hover{
     zoom:1.03;
-    
+}
+
+.bestSellersItens div:hover{
+    zoom: 1.03;
 }
 
 /*products page  */
