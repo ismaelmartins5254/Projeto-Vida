@@ -1,0 +1,33 @@
+.containerFone{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.containerFone div{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 80%;
+}
+
+.itemFone{
+    background-color: #fff;
+    width: 20em;
+    height: 30em;
+    cursor: pointer;
+    border: 0.5px solid #cccaca;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+
+.itemFone img{
+    width: 50%;
+}

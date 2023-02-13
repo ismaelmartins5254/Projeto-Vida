@@ -9,6 +9,7 @@
 body {
     background-color: #edecec;
     font-family: 'DM Sans', sans-serif;
+    
 }
 
 header {
@@ -97,14 +98,15 @@ header a {
 .texto-prom button,
 .texto-fone button {
     border: none;
-    border-radius: 15px;
-    height: 5vh;
+    margin: 2em auto;
+    border-radius: 5px;
+    height: 2em;
     cursor: pointer;
     transition: 1s;
-    background: none;
+    background: #fff;
     text-decoration: none;
     color: #000;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 .fone {
@@ -146,6 +148,7 @@ header a {
 
 .bestSellersItens {
     cursor: pointer;
+    overflow: hidden;
     display: flex;
     font-size: .8em;
 }
@@ -172,6 +175,7 @@ header a {
 }
 
 .bestseller img {
+    margin-top: 1em;
     height: 20vh;
     cursor: pointer;
 }
@@ -190,6 +194,7 @@ header a {
 
 .bestseller button,
 .sale button {
+    margin-top: 2.5em;
     border: none;
     width: 30vw;
     height: 8vh;
@@ -223,6 +228,7 @@ header a {
 }
 
 .saleItens{
+    
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -231,6 +237,7 @@ header a {
 }
 
 .saleItens div img{
+    margin-top: 1em;
     width: 15em;
 }
 
@@ -245,6 +252,7 @@ header a {
 .sale2,
 .sale3,
 .sale4 {
+    overflow: hidden;
     cursor: pointer;
     border: .5px solid #edecec;
     margin-top: 10vh;

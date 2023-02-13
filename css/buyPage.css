@@ -1,0 +1,55 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.containerBuy{
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.car button, .buy{
+    margin-bottom: .5em;
+    height: 2em;
+    width: 15em;
+    cursor: pointer;
+    border: none;
+    background-color: #751FFF;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    transition: 1s;
+}
+
+
+.iten{
+    border: 0.5px solid #edecec;
+    display: flex;
+    width: 20em;
+    height: 25em;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8em;
+}
+
+.iten img{
+    margin-top: 2vw;
+}
+
+.iten > .preco{
+    margin-top: 5vh;
+}
+
+.iten button{
+    display: none;
+}

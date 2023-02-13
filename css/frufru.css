@@ -1,11 +1,11 @@
 /* home page */
 .texto-prom button:hover, .texto-fone button:hover{
-    background-color: #8011BA;
-    width: 100%;
-    height: 1em;
+    background: none;
+    border: 1px solid gray;
+    color: #faf7f7;
 }
 
-.buttonBuy button:hover, .sale button:hover{
+.buttonBuy button:hover, .sale button:hover, .buttonSeler button:hover{
     background-color: #4d17a3;
 }   
 
@@ -13,12 +13,18 @@
     background-color: #4d17a3;
 }
 
-.atalho-item img:hover, .categorias div div:hover, .saleItens div:hover{
+.atalho-item img:hover{
     zoom:1.03;
 }
 
-.bestSellersItens div:hover{
-    zoom: 1.03;
+.categorias div div:hover img, .saleItens div:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.bestSellersItens div:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*products page  */
@@ -39,3 +45,7 @@
     border-radius: 5px;
 }
 
+.itemFone:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
