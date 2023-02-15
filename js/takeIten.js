@@ -32,7 +32,7 @@ document.addEventListener('click', (e) => {
     let produtos = document.getElementById('produtos')
     localStorage.setItem('buyPage', parent.innerHTML)
     let img = document.createElement('img')
-    produtos.style.display = 'none'
+
     img.src = '../imagens/loading.svg'
     loading.appendChild(img)
     setTimeout(() => {
