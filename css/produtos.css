@@ -25,9 +25,6 @@
     font-size: .8em;
 }
 
-.itens img{
-    margin-top: 2vw;
-}
 
 .itens > .preco{
     margin-top: 5vh;
@@ -72,11 +69,8 @@ footer{
 
 /*Styles of the image loading*/
 
-#loading{
-    position: absolute;
-}
-
-#loading img{
+.loading{
+    margin-top: auto;
     width: 5em;
     height: 5em;
 }

@@ -12,7 +12,7 @@ document.addEventListener('click', (e) => {
         window.location.href = '../index.html'
         return
     } if (takeElement.id == 'info') {
-        me.innerHTML = 'Página de informações está indisponível'
+        me.innerHTML = 'Página de informações está indisponível &#128531;'
         me.classList.add('fail')
         message.appendChild(me)
         setTimeout(() => {
@@ -23,21 +23,18 @@ document.addEventListener('click', (e) => {
         me.innerHTML = 'Você já está na página de Produtos :)'
         me.classList.add('fail')
         message.appendChild(me)
-        
+
         setTimeout(() => {
             me.style.display = 'none'
         }, 2000)
         return
     }
-    let produtos = document.getElementById('produtos')
     localStorage.setItem('buyPage', parent.innerHTML)
     let img = document.createElement('img')
-
     img.src = '../imagens/loading.svg'
-    loading.appendChild(img)
+    img.classList.add('loading')
+    parent.appendChild(img)
     setTimeout(() => {
         window.location.href = '../html/buyPage.html'
-
-    }, 2000)
-
+    }, 500)
 })

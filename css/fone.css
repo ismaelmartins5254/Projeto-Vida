@@ -18,7 +18,7 @@
 .itemFone{
     background-color: #fff;
     width: 20em;
-    height: 30em;
+    height: 25em;
     cursor: pointer;
     border: 0.5px solid #cccaca;
     text-align: center;
@@ -29,5 +29,5 @@
 
 
 .itemFone img{
-    width: 50%;
+    width: 30%;
 }
