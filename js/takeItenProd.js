@@ -1,6 +1,5 @@
 document.addEventListener('click', (e) => {
 
-    let loading = document.getElementById('loading')
     let message = document.getElementById('men')
     let me = document.createElement('span')
     me.innerHTML = ''

@@ -165,11 +165,10 @@ header a {
     margin-bottom: 5vh;
 }
 
-.seler2,
-.seler3,
-.seler4,
-.seler5,
-.seler6 {
+#seler1,
+#seler2,
+#seler3,
+#seler4 {
     border: .5px solid #edecec;
     text-align: center;
     
@@ -284,8 +283,8 @@ header a {
     background-color: #fff;
     margin-top: 5vh;
     padding: 15vh 0 3vh 0;
-    text-align: center;
     justify-content: space-around;
+    text-align: center;
 }
 
 .categorias img {
@@ -303,7 +302,6 @@ header a {
 .categorias h1 {
     position: absolute;
     margin: -10vh 11vw;
-    width: 40vw;
 }
 
 .container_category{
