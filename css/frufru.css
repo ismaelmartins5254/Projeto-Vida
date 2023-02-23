@@ -17,13 +17,11 @@
     zoom:1.03;
 }
 
-.categorias div div:hover img, .saleItens div:hover img{
-    -webkit-transform: scale(1.1);
+.categorias div div:hover img, .saleItens div:hover img:not(.loading){
     transform: scale(1.1);
 }
 
 .bestSellersItens div:hover img:not(.loading){
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -46,6 +44,5 @@
 }
 
 .itemFone:hover img{
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
  }

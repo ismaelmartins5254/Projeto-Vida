@@ -191,6 +191,7 @@ header a {
 #seler2,
 #seler3,
 #seler4 {
+    height: 32em;
     border: .5px solid #edecec;
     text-align: center;
     
@@ -258,7 +259,7 @@ header a {
     font-size: .8em;
 }
 
-.saleItens div img{
+.saleItens div img:not(.loading){
     margin-top: 1em;
     width: 15em;
 }
@@ -274,6 +275,7 @@ header a {
 .sale2,
 .sale3,
 .sale4 {
+    height: 35em;
     overflow: hidden;
     cursor: pointer;
     border: .5px solid #edecec;
