@@ -3,12 +3,13 @@ document.addEventListener('click', (e) => {
     let message = document.getElementById('men')
     let me = document.createElement('span')
     me.innerHTML = ''
+    me.id = 'mens'
 
     e.preventDefault()
     let takeElement = e.target
     let parent = takeElement.closest('div')
     if (takeElement.id == 'ini') {
-        window.location.href = '../index.html'
+        window.location.href = '../Codigos Principais/index.html'
         return
     } if (takeElement.id == 'info') {
         me.innerHTML = 'Página de informações está indisponível &#128531;'
@@ -16,6 +17,7 @@ document.addEventListener('click', (e) => {
         message.appendChild(me)
         setTimeout(() => {
             me.style.display = 'none'
+            me.remove()
         }, 2000)
         return
     } if (takeElement.id == 'prod') {
@@ -25,7 +27,10 @@ document.addEventListener('click', (e) => {
 
         setTimeout(() => {
             me.style.display = 'none'
+            me.remove()
         }, 2000)
+        return
+    } if (takeElement.id == 'mens') {
         return
     }
     localStorage.setItem('buyPage', parent.innerHTML)

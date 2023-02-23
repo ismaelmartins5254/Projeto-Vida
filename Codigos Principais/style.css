@@ -47,6 +47,28 @@ header a {
     border-radius: 5px;
 }
 
+
+/* Styles from message imported of the JS*/
+
+#men{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: -1.5em;
+
+}
+
+#men .fail{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #f87a7a;
+    width: 25em;
+}
+
+
 .atalho {
     display: flex;
     background-color: #fff;
@@ -174,7 +196,7 @@ header a {
     
 }
 
-.bestseller img {
+.bestseller img:not(.loading) {
     margin-top: 1em;
     height: 20vh;
     cursor: pointer;
@@ -311,4 +333,12 @@ header a {
 
 p{
     font-size: 1.7em;
+}
+
+/*Styles of the image loading*/
+
+.loading{
+    margin-top: auto;
+    width: 5em;
+    height: 5em;
 }

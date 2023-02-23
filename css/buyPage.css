@@ -28,7 +28,6 @@ section{
     color: #fff;
     font-size: 1em;
     transition: 1s;
-    
 }
 
 
@@ -43,9 +42,16 @@ section{
     font-size: .8em;
 }
 
-
-
 .iten button{
+    display: none;
+}
+
+.iten img{
+    width: 6em;
+    height: 6em;
+}
+
+.iten span{
     display: none;
 }
 
@@ -56,6 +62,23 @@ section{
 }
 .lupa:hover{
     cursor: pointer;
+}
+
+#cep{
+    border: none;
+    background-color: #a339fa;
+    border-radius: 2px;
+    text-align: center;
+    height: 2em;
+    color: #fff ;
+}
+
+#cep::placeholder{
+    color: #fff;
+}
+
+#frete{
+    font-size: 1em;
 }
 
 .loading{
