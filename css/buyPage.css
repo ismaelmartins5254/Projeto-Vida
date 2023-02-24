@@ -11,6 +11,10 @@ section{
     align-items: center;
 }
 
+.static{
+    width: 20em;
+}
+
 .car {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,6 @@ section{
     font-size: 1em;
     transition: 1s;
 }
-
 
 .iten{
     display: flex;
@@ -55,11 +58,6 @@ section{
     display: none;
 }
 
-.loc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .lupa:hover{
     cursor: pointer;
 }
@@ -104,4 +102,13 @@ section{
     border-radius: 5px;
     background-color: #f87a7a;
     width: 25em;
+}
+
+#End{
+    width: 100%;
+}
+
+#End p{
+    font-size: 1em;
+  
 }

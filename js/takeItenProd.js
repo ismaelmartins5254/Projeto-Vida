@@ -20,7 +20,7 @@ document.addEventListener('click', (e) => {
             me.remove()
         }, 2000)
         return
-    } if (takeElement.id == 'prod') {
+    } if (takeElement.id == 'produPage') { //quando tiver na pagina de produtos
         me.innerHTML = 'Você já está na página de Produtos :)'
         me.classList.add('fail')
         message.appendChild(me)
@@ -32,7 +32,10 @@ document.addEventListener('click', (e) => {
         return
     } if (takeElement.id == 'mens') {
         return
-    }
+    }if(takeElement.id == 'prod') window.location.href = '../html/produtos.html'
+
+
+
     localStorage.setItem('buyPage', parent.innerHTML)
     let img = document.createElement('img')
     img.src = '../imagens/loading.svg'

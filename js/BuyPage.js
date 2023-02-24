@@ -4,6 +4,7 @@ const cep = document.getElementById('cep')
 const frete = document.getElementById('frete')
 const message = document.getElementById('message')
 const loc = document.getElementById('loc')
+let End = document.getElementById('End')
 let freteMessage = document.createElement('p')
 let newCep = document.createElement('p')
 
@@ -52,33 +53,29 @@ function cepFun() { // filter zip code to see if it's valid
             headers: {
                 'Content-Type': 'application/json'
             },
-        }).then(resp => {
-                resp.json()
-                console.log(resp)
-            }).then(data => {
-                data.map((e) => {
-                    console.log(e)
-                })
-            }).catch((err) => {
-                console.log(err)
-            })
-        freteMessage.innerHTML += 'O valor do seu frete é de R$150 <br>'
-        freteMessage.innerHTML += ``
+        }).then((resp) => {
+            return resp.json()
+        }).then((data) => {
+            let rua = document.createElement('p')
+            let bairro = document.createElement('p')
+            let cidade = document.createElement('p')
+            rua.innerHTML = data.logradouro
+            bairro.innerHTML = `Bairro: ${data.bairro}`
+            cidade.innerHTML =`${data.localidade} ${data.uf}`
+            End.appendChild(rua)
+            End.appendChild(bairro)
+            End.appendChild(cidade)
+        }).catch((err) => {
+            console.log(err)
+        })
+        freteMessage.innerHTML = 'O valor do seu frete é de R$150 <br>'
         freteMessage.style.fontSize = '1em'
         loc.appendChild(freteMessage)
-        /*cep.remove()
+        cep.remove()
         lupa.remove()
-        frete.remove()*/
+        frete.remove()
     }
 }
-lupa.addEventListener('click', () => {
-    cepFun()
-})
+lupa.addEventListener('click', () => { cepFun() })
 
-cep.addEventListener('keyup', (e) => {
-    if (e.code == 'Enter' || e.code == 'NumpadEnter') {
-        cepFun()
-    }
-})
-
-
+cep.addEventListener('keyup', (e) => { if (e.code == 'Enter' || e.code == 'NumpadEnter') cepFun() })
