@@ -43,6 +43,6 @@
     border-radius: 5px;
 }
 
-.itemFone:hover img{
+.itemFone:hover img:not(.loading){
     transform: scale(1.1);
  }
