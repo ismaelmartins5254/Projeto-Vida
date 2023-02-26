@@ -28,9 +28,14 @@ info.addEventListener('click', (e) => {
 let bestSeler = document.getElementById('bestsellerIten')
 let sale = document.getElementById('saleItens')
 let buttonSeler = document.getElementById('buttonSeler')
+let saleButton = document.getElementById('saleButton')
 
 buttonSeler.addEventListener('click', (e)=>{
     window.location.href = '../html/bestSeler.html'
+})
+
+saleButton.addEventListener('click', (e)=>{
+    window.location.href = '../html/Sale.html'
 })
 
 bestSeler.addEventListener('click', (e) => {
