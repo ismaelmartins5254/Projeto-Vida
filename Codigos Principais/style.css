@@ -170,16 +170,16 @@ header a {
 }
 
 .bestSellersItens {
-    cursor: pointer;
     overflow: hidden;
     display: flex;
+    justify-content: center;
     font-size: .8em;
 }
 
 .bestseller div {
-    
     transition: 1s;
 }
+
 
 .bestseller h2 {
     text-align: center;
@@ -191,9 +191,11 @@ header a {
 #seler2,
 #seler3,
 #seler4 {
+    cursor: pointer;
     border: .5px solid #edecec;
     text-align: center;
-    
+
+    width: 20em;
 }
 
 .bestseller img:not(.loading) {
@@ -203,7 +205,6 @@ header a {
 }
 
 .bestseller span {
-    position: absolute;
     background-color: red;
     color: #fff;
 }
@@ -274,31 +275,32 @@ header a {
 .sale2,
 .sale3,
 .sale4 {
-    height: 35em;
+    width: 20em;
+    min-height: 30em;
     overflow: hidden;
     cursor: pointer;
     border: .5px solid #edecec;
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
 
 }
 
 .sale span {
-    position: absolute;
     background-color: red;
     color: #fff;
-}
-
-.saleItens p{
-    width: 95%;
 }
 
 .saleButton, .buttonSeler{
     display: flex;
     justify-content: center;
     font-size: .8em;
+}
+
+.saleItens div p{
+    margin-top: 1em;
 }
 
 .categorias {

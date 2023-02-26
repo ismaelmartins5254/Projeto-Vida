@@ -1,0 +1,33 @@
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.saleItens {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.sale{
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: 0.5px solid #cccaca;
+    width: 20em;
+    min-height: 30em;
+    margin-top: 2em;
+}
+
+.sale img {
+    width: 50%;
+}

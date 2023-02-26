@@ -1,0 +1,37 @@
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.bestItens {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.best{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0.5px solid #cccaca;
+    width: 20em;
+    height: 25em;
+    overflow: hidden;
+}
+
+.best p:not(.preco) {
+    margin-top: 2vh;
+
+}
+
+.best img {
+    width: 50%;
+}

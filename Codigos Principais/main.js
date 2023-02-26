@@ -27,18 +27,24 @@ info.addEventListener('click', (e) => {
 
 let bestSeler = document.getElementById('bestsellerIten')
 let sale = document.getElementById('saleItens')
+let buttonSeler = document.getElementById('buttonSeler')
 
+buttonSeler.addEventListener('click', (e)=>{
+    window.location.href = '../html/bestSeler.html'
+})
 
 bestSeler.addEventListener('click', (e) => {
     e.preventDefault()
     let target = e.target
     let parent = target.closest('div')
+    if(target.id == 'bestsellerIten') return
+    
     localStorage.setItem('buyPage', parent.innerHTML)
     let img = document.createElement('img')
     img.src = '../imagens/loading.svg'
     img.classList.add('loading')
     parent.appendChild(img)
-
+    console.log(target)
     setTimeout(() => {
         window.location.href = '../html/buyPage.html'
     }, 500)
@@ -48,12 +54,15 @@ sale.addEventListener('click', (e)=>{
     e.preventDefault()
     let target = e.target
     let parent = target.closest('div')
+    if(target.id == 'saleItens') {
+        return
+    }
     localStorage.setItem('buyPage', parent.innerHTML)
     let img = document.createElement('img')
     img.src = '../imagens/loading.svg'
     img.classList.add('loading')
     parent.appendChild(img)
-
+   
     setTimeout(() => {
         window.location.href = '../html/buyPage.html'
     }, 500)

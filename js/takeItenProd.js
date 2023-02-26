@@ -33,6 +33,9 @@ document.addEventListener('click', (e) => {
     } if (takeElement.id == 'mens') {
         return
     }if(takeElement.id == 'prod') window.location.href = '../html/produtos.html'
+    if (takeElement.id == 'saleItens') {
+        return
+    }
 
 
 

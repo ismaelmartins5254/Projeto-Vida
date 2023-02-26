@@ -19,10 +19,12 @@
 
 .categorias div div:hover img, .saleItens div:hover img:not(.loading){
     transform: scale(1.1);
+    transition: .5s;
 }
 
 .bestSellersItens div:hover img:not(.loading){
     transform: scale(1.1);
+    transition: .5s;
 }
 
 /*products page  */
