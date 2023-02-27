@@ -2,10 +2,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
-.container_itensPc div{
+.pc{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.pc div{
     background-color: #fff;
+    overflow: hidden;
     width: 14em;
     cursor: pointer;
     border: 0.5px solid #cccaca;
@@ -13,6 +23,6 @@
     
 }
 
-.container_itensPc div p{
+.pc div p{
     font-size: 1.7em;
 }

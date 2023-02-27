@@ -14,7 +14,8 @@
 }
 
 .atalho-item img:hover{
-    zoom:1.03;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .categorias div div:hover img, .saleItens div:hover img:not(.loading){
@@ -29,22 +30,21 @@
 
 /*products page  */
 
-.itens:hover{
-    zoom: 1.03;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.36);
-    border-radius: 5px;
+.itens:hover img{
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .itens button:hover{
     background-color: #4d17a3;
 }
 
-.celulares:hover, .table:hover, .item:hover, .Pagetablet:hover, .container_itensPc div:hover, .tvItem:hover{
-    zoom: 1.02;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.36);
-    border-radius: 5px;
+.celulares:hover img, .table:hover img, .item:hover img, .Pagetablet:hover img, .pc div:hover img, .tvItem:hover img{
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .itemFone:hover img:not(.loading){
     transform: scale(1.1);
+    transition: .5s;
  }

@@ -1,0 +1,13 @@
+@media only screen and (min-width:451px) {
+
+    #media{
+        display: none;
+    }
+    #closeMenu {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+}

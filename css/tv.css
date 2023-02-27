@@ -1,20 +1,35 @@
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .containerTv{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    width: auto;
-
+    width: 80%;
 }
 
 .tvItem{
-    width: 14em;
+    width: 20em;
+    height: 25em;
     background-color: #fff;
     border: 0.5px solid #cccaca;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.tvItem img {
+    width: 50%;
+}
+
+.loading{
+    margin-top: 0%;
 }

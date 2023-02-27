@@ -5,14 +5,26 @@ section{
     text-align: center;
 }
 
+.containerTablet{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
 .Pagetablet{
     background-color: #fff;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
     cursor: pointer;
-    width: 14em;
-    border: 0.5px solid #cccaca;
-    
+    width: 20em;
+    border: 0.5px solid #cccaca; 
+}
+.Pagetablet p{
+    margin-top: 1em;
 }
 footer{
     margin-top: 10vh;

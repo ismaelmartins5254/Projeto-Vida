@@ -30,14 +30,12 @@ document.addEventListener('click', (e) => {
             me.remove()
         }, 2000)
         return
-    } if (takeElement.id == 'mens') {
-        return
-    }if(takeElement.id == 'prod') window.location.href = '../html/produtos.html'
-    if (takeElement.id == 'saleItens') {
+    } if (takeElement.id == 'mens') return
+    if (takeElement.id == 'prod') {
+        window.location.href = '../html/produtos.html'
         return
     }
-
-
+    if (takeElement.id == 'container') return
 
     localStorage.setItem('buyPage', parent.innerHTML)
     let img = document.createElement('img')
