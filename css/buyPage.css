@@ -1,30 +1,36 @@
-section{
+section {
     display: flex;
     justify-content: center;
 }
 
-.containerBuy{
-    width: 80%;
+.containerBuy {
+    width: 81%;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.static{
-    width: 20em;
-}
-
-.car {
+.static {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
-    justify-content: space-around;
 }
 
-.car button, .buy{
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.car button,
+.buy {
     margin-bottom: .5em;
     height: 2em;
-    width: 15em;
+    width: 50%;
     cursor: pointer;
     border: none;
     background-color: #751FFF;
@@ -34,57 +40,67 @@ section{
     transition: 1s;
 }
 
-.iten{
+
+.loc {
     display: flex;
-    width: 20em;
-    height: 25em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.iten {
+    display: flex;
+    height: 17em;
     margin-top: 10em;
     background-color: #fff;
     flex-direction: column;
     align-items: center;
     font-size: .8em;
+    width: 100%;
 }
 
-.iten button{
+.iten button {
     display: none;
 }
 
-.iten img{
+.iten img {
     width: 6em;
     height: 6em;
 }
 
-.iten span{
+.iten span {
     display: none;
 }
 
-.lupa:hover{
+.lupa:hover {
     cursor: pointer;
 }
 
-#cep{
+#cep {
     border: none;
     background-color: #a339fa;
     border-radius: 2px;
     text-align: center;
     height: 2em;
-    color: #fff ;
-}
-
-#cep::placeholder{
     color: #fff;
 }
 
-#frete{
-    font-size: 1em;
+#cep::placeholder {
+    color: #fff;
 }
 
-.loading{
+#frete {
+    font-size: 1em;
+    text-align: center;
+}
+
+.loading {
     display: none;
 }
 
 /* Styles from message imported of the JS*/
-#message{
+#message {
     width: 75%;
     position: absolute;
     display: flex;
@@ -94,8 +110,8 @@ section{
 
 }
 
-#message .fail{
-    
+#message .fail {
+
     font-size: 1.5em;
     display: flex;
     justify-content: center;
@@ -104,11 +120,11 @@ section{
     width: 25em;
 }
 
-#End{
+#End {
     width: 100%;
 }
 
-#End p{
+#End p {
     font-size: 1em;
-  
+
 }

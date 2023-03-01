@@ -28,6 +28,7 @@
         flex-direction: column;
     }
 
+
 }
 
 @media only screen and (max-width:450px) {
@@ -79,6 +80,13 @@
         margin: auto;
         width: auto;
     }
+
+    /*buy page*/
+    .containerBuy {
+        flex-direction: column;
+    }
+
+   
 
 }
 

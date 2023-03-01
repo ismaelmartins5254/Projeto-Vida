@@ -83,6 +83,7 @@ async function cepFun() { // filter zip code to see if it's valid
             }, 2000)
             freteMessage.style.fontSize = '1em'
             loc.appendChild(freteMessage)
+            
         }
     }
 }
@@ -90,3 +91,4 @@ async function cepFun() { // filter zip code to see if it's valid
 lupa.addEventListener('click', () => { cepFun() })
 
 cep.addEventListener('keyup', (e) => { if (e.code == 'Enter' || e.code == 'NumpadEnter') cepFun() })
+

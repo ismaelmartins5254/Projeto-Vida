@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="../css/frufru.css">
     <link rel="stylesheet" href="../css/produtos.css">
     <link rel="stylesheet" href="../css/mediaScreen.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
     <link rel="stylesheet" href="../css/buyPage.css">
     <script src="../js/BuyPage.js" defer></script>
+    <script src="../js/carrinho.js" defer></script>
 </head>
 
 <body onload="onload()">
@@ -21,6 +23,9 @@
         <a href="../Codigos Principais/index.html">
             <h1 style="font-size: 1.5em;">Projeto Vida</h1>
         </a>
+        <div id="contCar">
+        <img src="../imagens/carrinho.png" alt="carrinho" id="carrinho">
+    </div>
         <div class="links">
             <a href="../Codigos Principais/index.html">Inicio</a>
             <a href="produtos.html">Produtos</a>
@@ -31,22 +36,25 @@
     <section>
         <div id="message"></div>
         <div class="containerBuy">
-            <div id="all"></div>
+            <div id="all">
+                <input type="number" min="0" placeholder="Quantidade..." style="border: none; position: absolute; margin-top: 30%; background-color: blueviolet;" >
+            </div>
             <div class="static">
                 <div class="car">
                     <button>adicionar ao carrinho</button>
                     <button class="buy">Compre Agora</button>
                 </div>
-                
+                <p id="frete">pesquise o valor do frete:</p>
                 <div class="loc" id="loc">
-                    <p id="frete">pesquise o valor do frete:</p>
+
                     <input type="text" placeholder="adicione o seu cep aqui" id="cep" maxlength="9">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" class="lupa" id="lupa">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24"
+                        class="lupa" id="lupa">
                         <path
                             d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z">
                         </path>
-                    </svg> 
-                    
+                    </svg>
+
                 </div>
                 <div id="End"></div>
             </div>
