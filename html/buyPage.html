@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="../css/frufru.css">
     <link rel="stylesheet" href="../css/produtos.css">
     <link rel="stylesheet" href="../css/mediaScreen.css">
-    <link rel="stylesheet" href="../css/carrinho.css">
     <link rel="stylesheet" href="../css/buyPage.css">
     <script src="../js/BuyPage.js" defer></script>
-    <script src="../js/carrinho.js" defer></script>
+
 </head>
 
 <body onload="onload()">
@@ -23,9 +22,7 @@
         <a href="../Codigos Principais/index.html">
             <h1 style="font-size: 1.5em;">Projeto Vida</h1>
         </a>
-        <div id="contCar">
-        <img src="../imagens/carrinho.png" alt="carrinho" id="carrinho">
-    </div>
+
         <div class="links">
             <a href="../Codigos Principais/index.html">Inicio</a>
             <a href="produtos.html">Produtos</a>
@@ -37,12 +34,13 @@
         <div id="message"></div>
         <div class="containerBuy">
             <div id="all">
-                <input type="number" min="0" placeholder="Quantidade..." style="border: none; position: absolute; margin-top: 30%; background-color: blueviolet;" >
+
             </div>
             <div class="static">
                 <div class="car">
                     <button>adicionar ao carrinho</button>
                     <button class="buy">Compre Agora</button>
+                    <input type="number" min="0" id="quantG" placeholder="Coloque a Quantidade aqui...">
                 </div>
                 <p id="frete">pesquise o valor do frete:</p>
                 <div class="loc" id="loc">

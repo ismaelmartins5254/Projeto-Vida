@@ -7,30 +7,21 @@ section {
     width: 81%;
     background-color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.static {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
 
-.all {
+#all {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .car button,
 .buy {
     margin-bottom: .5em;
     height: 2em;
-    width: 50%;
     cursor: pointer;
     border: none;
     background-color: #751FFF;
@@ -41,13 +32,33 @@ section {
 }
 
 
+.car{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#quantG{
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    height: 2em;
+    justify-content: center;
+    border: none; 
+    background-color: #a339fa;
+}
+
+#quantG::placeholder{
+    color: #fff;
+    text-align: center;
+}
+
 .loc {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-
 
 .iten {
     display: flex;
@@ -122,6 +133,7 @@ section {
 
 #End {
     width: 100%;
+    margin-bottom: 20%;
 }
 
 #End p {
