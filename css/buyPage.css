@@ -18,7 +18,7 @@ section {
     align-items: center;
 }
 
-.car button,
+.buttonsBuy button,
 .buy {
     margin-bottom: .5em;
     height: 2em;
@@ -32,7 +32,7 @@ section {
 }
 
 
-.car{
+.buttonsBuy{
     display: flex;
     flex-direction: column;
     

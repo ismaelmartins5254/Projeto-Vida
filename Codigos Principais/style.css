@@ -364,3 +364,16 @@ p{
     width: 5em;
     height: 5em;
 }
+
+/* codigo do carrinho */
+.car{
+    position: absolute;
+    display: flex;
+    justify-content:flex-end ;
+    width: 90%;
+}
+
+.car img{
+    width: 40px;
+    cursor: pointer;
+}

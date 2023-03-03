@@ -5,6 +5,8 @@ const frete = document.getElementById('frete')
 const message = document.getElementById('message')
 const loc = document.getElementById('loc')
 let End = document.getElementById('End')
+let BuyNow = document.getElementById('BuyNow')
+let addCar = document.getElementById('addCar')
 let freteMessage = document.createElement('p')
 let newCep = document.createElement('p')
 
@@ -34,7 +36,7 @@ function onload() { //add remote HTML from page
 }
 
 
-function creatElementsCep(resp){ //creat element case sucess
+function creatElementsCep(resp) { //creat element case sucess
     let rua = document.createElement('p')
     let bairro = document.createElement('p')
     let cidade = document.createElement('p')
@@ -83,7 +85,7 @@ async function cepFun() { // filter zip code to see if it's valid
             }, 2000)
             freteMessage.style.fontSize = '1em'
             loc.appendChild(freteMessage)
-            
+
         }
     }
 }
@@ -92,3 +94,13 @@ lupa.addEventListener('click', () => { cepFun() })
 
 cep.addEventListener('keyup', (e) => { if (e.code == 'Enter' || e.code == 'NumpadEnter') cepFun() })
 
+BuyNow.addEventListener('click', (e) => {
+    e.preventDefault()
+    let me = document.createElement('span')
+    me.innerHTML = 'Pagina de compra está indisponível &#128531'
+    me.classList.add('fail')
+    message.appendChild(me)
+    setTimeout(() => {
+        me.remove()
+    }, 2000)
+})
