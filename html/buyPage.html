@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Vida</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../Codigos Principais/style.css">
     <link rel="stylesheet" href="../css/frufru.css">
     <link rel="stylesheet" href="../css/menuHamb.css">
@@ -20,13 +19,15 @@
 
 <body onload="onload()">
 
+   
     <!--cabeçalho-->
     <header>
         <a href="../Codigos Principais/index.html">
             <h1 style="font-size: 1.5em;">Projeto Vida</h1>
         </a>
-        <div id="car" class="car">
-            <img src="../imagens/carrinho.png" alt="">
+        <div class="car">
+            <img src="../imagens/carrinho.png" alt="" id="car">
+            <span id="valueCar"></span>
         </div>
         <div id="media">
             <span class="material-symbols-outlined " id="menu">menu</span>
@@ -54,7 +55,7 @@
                 <div class="buttonsBuy">
                     <button id="addCar">adicionar ao carrinho</button>
                     <button class="buy" id="BuyNow">Compre Agora</button>
-                    <input type="number" min="0" id="quantG" placeholder="Coloque a Quantidade aqui...">
+                    <input type="number" min="1" id="quantG" placeholder="Coloque a Quantidade aqui..." value="1">
                 </div>
                 <p id="frete">pesquise o valor do frete:</p>
                 <div class="loc" id="loc">

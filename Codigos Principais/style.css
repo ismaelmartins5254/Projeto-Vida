@@ -367,10 +367,9 @@ p{
 
 /* codigo do carrinho */
 .car{
-    position: absolute;
+    width: 95%;
     display: flex;
-    justify-content:flex-end ;
-    width: 90%;
+    justify-content: flex-end;
 }
 
 .car img{

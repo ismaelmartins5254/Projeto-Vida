@@ -6,10 +6,11 @@ const message = document.getElementById('message')
 const loc = document.getElementById('loc')
 let End = document.getElementById('End')
 let BuyNow = document.getElementById('BuyNow')
-let addCar = document.getElementById('addCar')
+let quantG = document.getElementById('quantG')
+let addCar = document.getElementById('addCar')  
+let car = document.getElementById('car')  
 let freteMessage = document.createElement('p')
 let newCep = document.createElement('p')
-
 
 
 info.addEventListener('click', (e) => {
@@ -37,6 +38,7 @@ function onload() { //add remote HTML from page
 
 
 function creatElementsCep(resp) { //creat element case sucess
+    
     let rua = document.createElement('p')
     let bairro = document.createElement('p')
     let cidade = document.createElement('p')
@@ -75,7 +77,7 @@ async function cepFun() { // filter zip code to see if it's valid
             let resp = await link.json()
             creatElementsCep(resp)
         } catch (err) { //if value number zip code = true but zip code not found
-            console.log(err)
+            console.log(err) 
             let me = document.createElement('span')
             me.innerHTML = 'cep inválido, por favor adicione um cep válido :)'
             me.classList.add('fail')
@@ -85,7 +87,6 @@ async function cepFun() { // filter zip code to see if it's valid
             }, 2000)
             freteMessage.style.fontSize = '1em'
             loc.appendChild(freteMessage)
-
         }
     }
 }
@@ -103,4 +104,49 @@ BuyNow.addEventListener('click', (e) => {
     setTimeout(() => {
         me.remove()
     }, 2000)
+})
+
+// related items shopping cart page 
+addCar.addEventListener('click', (e)=>{
+    pageCar()
+    let valueCar = document.getElementById('valueCar')
+    e.preventDefault()
+    let quant = parseInt(quantG.value)
+    localStorage.setItem('quant', quant)
+    valueCar.textContent = localStorage.getItem('quant')
+})
+
+document.onload = function(){
+    let valueCar = document.getElementById('valueCar')
+    valueCar.textContent = localStorage.getItem('quant')
+}() //auto run
+
+function creatPage(itens){
+    let div = document.createElement('div')
+    div.classList.add('containerCar')
+    div.innerHTML = `${itens}`
+    localStorage.setItem('carPage', div.innerHTML)
+}
+
+function pageCar(){
+    let img = localStorage.getItem('buyPage')
+    creatPage(img)
+}
+
+car.addEventListener('click', (e)=>{
+    let me = document.createElement('span')
+    e.preventDefault()
+    
+    me.innerHTML = 'Redirecionando...'
+    me.style.backgroundColor = '#853ef8'
+    me.style.color = '#fff'
+    me.style.width = '20em'
+    me.style.textAlign = 'center'
+    me.style.borderRadius = '5px'
+    message.appendChild(me)
+    setTimeout(() => {
+        me.remove()
+        window.location.href = '../html/carPage.html'
+    }, 1000)
+    
 })

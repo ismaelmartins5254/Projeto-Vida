@@ -5,8 +5,10 @@ let saleButton = document.getElementById('saleButton')
 
 
 let info = document.getElementById('a3')
+let car = document.getElementById('car')
 let message = document.getElementById('men')
 let iniP = document.getElementById('iniP')
+let ini = document.getElementById('ini')
 let infor = document.getElementById('info') //quando tiver na tela de pc
 
 
@@ -36,7 +38,19 @@ iniP.addEventListener('click', (e) => { //ao clicar no botão de inicio
     }, 2000)
     return
 })
-infor.addEventListener('click', (e) => { //ao clicar no botão de inicio
+ini.addEventListener('click', (e) => { //ao clicar no botão de inicio
+    e.preventDefault()
+    let me = document.createElement('span')
+    me.innerHTML = 'Você já está na página de inicio :)'
+    me.classList.add('fail')
+    message.appendChild(me)
+    setTimeout(() => {
+        me.style.display = 'none'
+        me.remove()
+    }, 2000)
+    return
+})
+infor.addEventListener('click', (e) => { 
     e.preventDefault()
     let me = document.createElement('span')
     me.innerHTML = 'Página de informações está indisponível &#128531;'
@@ -48,6 +62,22 @@ infor.addEventListener('click', (e) => { //ao clicar no botão de inicio
     }, 2000)
     return
 })
+
+car.addEventListener('click', ()=>{
+    let me = document.createElement('span')
+    me.innerHTML = 'Redirecionando...'
+    me.style.backgroundColor = '#853ef8'
+    me.style.color = '#fff'
+    me.style.width = '20em'
+    me.style.textAlign = 'center'
+    me.style.borderRadius = '5px'
+    message.appendChild(me)
+    setTimeout(() => {
+        me.remove()
+        window.location.href = '../html/carPage.html'
+    }, 1000)
+    return
+}) 
 
 
 //Change of Pages
@@ -102,3 +132,8 @@ sale.addEventListener('click', (e) => {
         window.location.href = '../html/buyPage.html'
     }, 500)
 })
+
+document.onload = function(){
+    let valueCar = document.getElementById('valueCar')
+    valueCar.textContent = localStorage.getItem('quant')
+}() //auto execução

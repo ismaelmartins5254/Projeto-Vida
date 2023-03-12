@@ -1,0 +1,11 @@
+#all{
+    margin-top: 0;
+    height: 15em;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#quantG{
+    position: absolute;
+    margin: auto;
+}
