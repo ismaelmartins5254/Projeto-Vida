@@ -5,9 +5,15 @@ let message = document.getElementById('men')
 function onload(){
     let all = document.getElementById('all')
     let item = localStorage.getItem('carPage')
+    if (item == null){
+        let me = document.createElement('span')
+        me.innerHTML = 'Por favor adicione um item antes :)'
+        console.log('sem nd ainda')
+        message.appendChild(me)
+        me.classList.add('fail')
+    }
     all.classList.add('iten')
     all.innerHTML = item
-
 }
 
 info.addEventListener('click', (e) => {

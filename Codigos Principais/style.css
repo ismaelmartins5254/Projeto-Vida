@@ -77,13 +77,14 @@ header a {
     margin-top: auto;
 }
 
+
 #menu{
     margin-right: 9em;
     margin-top: -3em;
 }
 
 #closeMenu{
-    
+    margin-left: -2em;
     margin-top: -3em;
     display: none;
 }
@@ -92,7 +93,7 @@ header a {
     display: flex;
     background-color: #fff;
     padding: 10vh 0 2.5vh 0;
-    margin-bottom: 5vh;
+    margin-bottom: 5vh; 
     text-align: center;
     flex-direction: column;
 }
